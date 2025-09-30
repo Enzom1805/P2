@@ -4,7 +4,7 @@ public class Principal {
         // Agregamos una "politica de aceptacion" a la farmacia que determina que medicamentos acepta para vender
         // No estaba en el enunciado
         Farmacia tandil = new Farmacia(
-            new CondicionOr(
+                new CondicionOr(
                 new CondicionPorPrecioMenor(100),
                 new CondicionOr(
                     new CondicionPorLab("Raffo"), 
