@@ -7,7 +7,7 @@ public class CondicionNombreC extends Condicion {
         this.nombre = nombre;
     }
     public boolean cumple(Planta planta) {
-        return planta.getNombreCientifico().equalsIgnoreCase(nombre);
+        return planta.getNombreCientifico().toLowerCase().contains(nombre);
     }
     
     

@@ -22,6 +22,7 @@ public class Planta {
         this.interior = interior;
         this.riego = riego;
         this.sol = sol;
+        nombresVulgares = new ArrayList<>();
         }
     public String getNombreCientifico() {
         return nombreCientifico;
@@ -41,6 +42,9 @@ public class Planta {
     public int getSol() {
         return sol;
     }
+    public boolean getInterior(){
+        return interior;
+    }
     public void agregarNombreVulgar(String nom){
         nombresVulgares.add(nom);
     }
@@ -51,5 +55,19 @@ public class Planta {
         }
         return Vulgares;
     }
-    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nombre Cientifico: ").append(nombreCientifico).append("\n");
+        for(String nv : nombresVulgares){
+            sb.append("Nombre Vulgar: ").append(nv).append("\n");
+        }
+        sb.append("Clasificacion Superior: ").append(clasificacionSuperior).append("\n");
+        sb.append("Familia: ").append(familia).append("\n");
+        sb.append("Clase: ").append(clase).append("\n");
+        sb.append("De ").append(interior ? "Interior" : "Exterior").append("\n");
+        sb.append("Riego (veces por semana): ").append(riego).append("\n");
+        sb.append("Sol (horas por dia): ").append(sol).append("\n");
+        return sb.toString();
+    }
 }

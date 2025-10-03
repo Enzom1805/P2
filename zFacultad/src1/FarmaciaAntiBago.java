@@ -1,3 +1,4 @@
+package zFacultad.src1;
 //NO SIRVE PORQUE SI AHORA VOY CONTRA BAYER ES CLASE NUEVA
 public class FarmaciaAntiBago extends Farmacia {
 //MAL NO USAR

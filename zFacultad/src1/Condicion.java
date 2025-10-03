@@ -1,3 +1,4 @@
+package zFacultad.src1;
 
 public abstract class Condicion {
 
